@@ -2,7 +2,6 @@
 """Debug the handle_call_tool function to see why it returns None."""
 
 import asyncio
-import json
 import sys
 
 sys.path.append(".")
@@ -20,7 +19,7 @@ logging.basicConfig(level=logging.DEBUG)
 async def debug_handle_call_tool(name: str, arguments: dict):
     """Debug version of handle_call_tool with extensive logging."""
 
-    print(f"=== DEBUG handle_call_tool ===")
+    print("=== DEBUG handle_call_tool ===")
     print(f"name: {name}")
     print(f"arguments: {arguments}")
     print()

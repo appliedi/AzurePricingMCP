@@ -7,7 +7,6 @@ import sys
 
 sys.path.append(".")
 
-from mcp.types import CallToolRequest
 
 from azure_pricing_mcp.server import AzurePricingServer
 

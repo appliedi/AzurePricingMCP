@@ -5,7 +5,6 @@ Verifies the server can start and respond to basic queries
 """
 
 import asyncio
-import json
 import sys
 
 from azure_pricing_mcp.server import AzurePricingServer
