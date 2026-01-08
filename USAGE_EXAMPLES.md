@@ -383,8 +383,6 @@ Block Blob LRS (GPv1) - East US:
 - Write Operations: $0.00036 per 10K
 - 100,000 operations = 10 × 10K
 - Total: $0.0036
-
-With 10% customer discount: $0.00324
 ```
 
 ---
@@ -411,8 +409,7 @@ Compare Hot, Cool, and Archive storage pricing in East US
       "sku": "D32s v6",
       "region": "eastus2",
       "location": "US East 2",
-      "discounted_price": 1.4517,
-      "original_price": 1.613,
+      "retailPrice": 1.613,
       "unit": "1 Hour",
       "type": "Consumption",
       "savings_plans": [
@@ -424,11 +421,7 @@ Compare Hot, Cool, and Archive storage pricing in East US
     }
   ],
   "count": 1,
-  "currency": "USD",
-  "discount_applied": {
-    "percentage": 10.0,
-    "note": "Prices shown are after discount"
-  }
+  "currency": "USD"
 }
 ```
 
@@ -440,8 +433,6 @@ Region: eastus
 Product: Virtual Machines Dsv5 Series
 Unit: 1 Hour
 Currency: USD
-
-💰 10.0% discount applied - All prices shown are after discount
 
 Usage Assumptions:
 - Hours per month: 730

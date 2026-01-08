@@ -125,6 +125,17 @@ pydantic>=2.0.0
 requests>=2.31.0
 ```
 
+### Configuration
+
+You can configure a default discount percentage using an environment variable:
+
+- **`AZURE_DISCOUNT_PERCENT`**: Set a global discount percentage (e.g., `15.0`) applied to all pricing. Defaults to `0.0`.
+
+To set this in `.env`:
+```env
+AZURE_DISCOUNT_PERCENT=10.0
+```
+
 ---
 
 ## 🖥️ VS Code Integration
