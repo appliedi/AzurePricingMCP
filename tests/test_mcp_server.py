@@ -246,7 +246,7 @@ class TestDiscountMetadataPropagation:
         tip = _get_discount_tip(result)
 
         assert tip == DISCOUNT_TIP_DEFAULT_USED
-        assert "10% discount applied" in tip
+        assert "discount applied" in tip.lower()
         assert "default" in tip.lower()
 
     def test_get_discount_tip_no_discount(self):

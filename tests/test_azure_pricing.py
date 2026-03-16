@@ -267,7 +267,7 @@ class TestPricingService:
         """Test customer discount retrieval."""
         result = await pricing_service.get_customer_discount()
 
-        assert result["discount_percentage"] == 10.0
+        assert result["discount_percentage"] == 0.0
         assert result["customer_id"] == "default"
         assert result["discount_type"] == "standard"
 
@@ -277,7 +277,7 @@ class TestPricingService:
         result = await pricing_service.get_customer_discount(customer_id="customer123")
 
         assert result["customer_id"] == "customer123"
-        assert result["discount_percentage"] == 10.0
+        assert result["discount_percentage"] == 0.0
 
     @pytest.mark.asyncio
     async def test_apply_discount_to_items(self, pricing_service):

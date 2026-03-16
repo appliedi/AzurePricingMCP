@@ -11,7 +11,7 @@ MAX_RESULTS_PER_REQUEST = 1000
 # Retry and rate limiting configuration
 MAX_RETRIES = 3
 RATE_LIMIT_RETRY_BASE_WAIT = 5  # seconds
-DEFAULT_CUSTOMER_DISCOUNT = 10.0  # percent
+DEFAULT_CUSTOMER_DISCOUNT = float(os.environ.get("AZURE_DISCOUNT_PERCENT", "0.0"))  # percent
 
 # SSL verification configuration
 # Set to False if behind a corporate proxy with self-signed certificates
